@@ -7,7 +7,10 @@
 """Spyder Language Server Protocol Client window handler routines."""
 
 import logging
-
+import pgzrun
+WIDTH = 640
+HEIGHT = 480
+pgzrun.go()
 
 
 from spyder.plugins.completion.languageserver import LSPRequestTypes

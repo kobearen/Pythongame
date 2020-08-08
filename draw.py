@@ -2,9 +2,19 @@ import numpy as np
 import pgzrun
 WIDTH = 640
 HEIGHT = 480
+
 def draw():
     screen.clear()
+
+    # 四角形を描く
+    rect1 = Rect((150, 150), (100, 100))
+    screen.draw.rect(rect1, 'RED')
+    rect2 = Rect((300, 150), (100, 100))
+    screen.draw.filled_rect(rect2, 'RED')
+
+    #文字を描く
     screen.draw.text('Sample Text', left=150, top=400, fontsize=32, color='YELLOW')
+
 pgzrun.go()
 
 from .._shared._geometry import polygon_clip
